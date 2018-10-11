@@ -85,14 +85,13 @@ $(function() {
          });
 
          it('completes its work', function() {
-            const feed = document.querySelector('.feed');
-            expect(feed.children.length > 0).toBe(true);
+            expect($('.entry').length).toBeGreaterThan(0);
         });
     });
 
     /* "New Feed Selection" */
     describe('New Feed Selection', function() {
-        const feed = document.querySelector('.feed.entry');
+        const feed = document.querySelector('.feed');
         const firstFeed = [];
 
         /* Testing that a new feed is loaded by the loadFeed function
