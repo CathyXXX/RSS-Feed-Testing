@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-* [Project Overview](#project_overview)
+* [Project Overview](#projectoverview)
 * [How to run the application?](#instructions)
 * [How was the project evaluated?](#contributing)
 
-# Project Overview
+## Project Overview
 
 In this project we were given a web-based application that reads RSS feeds. The started code as well as [Jasmine](http://jasmine.github.io/) was included. The task was to write test as written below.
 
@@ -15,7 +15,7 @@ In this project we were given a web-based application that reads RSS feeds. The 
 1. Clone or download the repository.
 2. Open the index.html in your browser. This will display the feed as well as the Jasmine test results. Jasmine will show the specs passed and failures for the test. 
 
-# How was the project evaluated?
+## How was the project evaluated?
 
 Review the Feed Reader Testing Rubric [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
 
