@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-* [Project Overview](##project-overview)
-* [How to run the application?](#how-to-run-the-application?)
-* [How was the project evaluated?](#how-was-the-project-evaluated?)
+* [Project Overview](#project-overview)
+* [How to run the application?](#how-to-run-the-application)
+* [How was the project evaluated?](#how-was-the-project-evaluated)
 
 ## Project Overview
 
