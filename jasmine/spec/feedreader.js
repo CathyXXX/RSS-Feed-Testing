@@ -91,18 +91,20 @@ $(function() {
 
     /* "New Feed Selection" */
     describe('New Feed Selection', function() {
-        const feed = document.querySelector('.feed');
-        const firstFeed = [];
+        var oldFeed;
+        var newFeed;
 
         /* Testing that a new feed is loaded by the loadFeed function
          * and that the content actually changes. LoadFeed() is asynchronous.
          */
          beforeEach(function(done) {
-            loadFeed(0);
-            Array.from(feed.children).forEach(function(entry) {
-                firstFeed.push(entry.innerText);
+            loadFeed(0, function(){
+                oldFeed = $('.feed').html();
+                loadFeed(1, function() {
+                    newFeed = $('.feed').hrml();
+                    done();
+                });
             });
-            loadFeed(1,done);
         });
 
         it('Changed Content', function() {
