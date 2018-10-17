@@ -101,16 +101,14 @@ $(function() {
             loadFeed(0, function(){
                 oldFeed = $('.feed').html();
                 loadFeed(1, function() {
-                    newFeed = $('.feed').hrml();
+                    newFeed = $('.feed').html();
                     done();
                 });
             });
         });
 
         it('Changed Content', function() {
-            Array.from(feed.children).forEach(function(entry,index) {
-                expect(entry.innerText === firstFeed[index]).toBe(false);
+            expect($('.feed').html()).not.toBe(oldFeed);
             });
         });
-    });
 }());
